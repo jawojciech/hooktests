@@ -1,6 +1,6 @@
 CREATE OR REPLACE PACKAGE BODY tst AS
   -------------------------------------------------------------------------------
-  PKG$VERSION CONSTANT VARCHAR2(10) := '1.12.18';
+  PKG$VERSION CONSTANT VARCHAR2(10) := '1.12.18aa';
   -------------------------------------------------------------------------------
   FUNCTION getLastChanges RETURN VARCHAR2 IS
   BEGIN
