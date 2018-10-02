@@ -1,1 +1,30 @@
-s/[ ]*PKG$VERSION[ ]*CONSTANT.*/  PKG$VERSION CONSTANT VARCHAR2(10) := '1.06';/
+v_version=adsafadfadfasdfasfdsafadfasdfasdfasdfasfdasfdsfasdfasdfasdfasfasdfaaaaaaaaaaaaaaaaaaa
+echo $v_version
+
+v_versionLength=${#v_version}
+
+echo $v_versionLength
+
+if [ "$v_versionLength" -lt 10 ]
+then
+   v_versionLength=10
+else
+	if [ "$v_versionLength" -lt 20 ]
+	then
+	   v_versionLength=20
+	else
+		if [ "$v_versionLength" -lt 50 ]
+		then
+		   v_versionLength=50
+		else
+			if [ "$v_versionLength" -lt 100 ]
+			then
+			   v_versionLength=100
+			else
+			   echo "zbyt duża wartość wersji"
+			fi
+		fi
+	fi
+fi
+
+echo $v_versionLength
